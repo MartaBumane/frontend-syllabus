@@ -1,6 +1,10 @@
 # DOM Manipulation
 
-## [Create a memory with html and vanilla js](./memory-game)
+## Exercises
+
+### [Create a memory with html and vanilla js](./memory-game)
+
+## [Home Assignments](./hw)
 
 ## Resources
 
