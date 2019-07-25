@@ -2,7 +2,7 @@
 
 ## Exercises
 
-### [Create a memory with html and vanilla js](./memory-game)
+### [Create a memory game](./memory-game)
 
 ## [Home Assignments](./hw)
 
