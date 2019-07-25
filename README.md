@@ -6,6 +6,8 @@
 
 ## [DOM Manipulation](./dom-manipulation)
 
+## [Object Oriented Programming](./object-oriented-programming)
+
 ## [TypeScript](./typescript)
 
 ## React
