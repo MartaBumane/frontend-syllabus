@@ -1,21 +1,25 @@
 # Frontend Syllabus
 
-## [Week #2 - JavaScript Basics](./js-basics)
+## [HTML & CSS](./html-css)
 
-## [Week #3 - DOM Manipulation](./dom-manipulation)
+## [JavaScript Basics](./js-basics)
 
-## [Week #4 - TypeScript](./typescript)
+## [DOM Manipulation](./dom-manipulation)
 
-## Week #5 & #6 - React
+## [TypeScript](./typescript)
 
-## Week #7 - CSS Animations
+## React
 
-## Week #8 - UI Frameworks
+## Advanced CSS
 
-## Week #9 - Testing
+## Integration with external resources (HTTP, API's, GraphQL)
 
-## Week #10 - Angular
+## UI Frameworks
 
-## Week #11 - Performance Guidelines
+## Testing
 
-## Week #12 - Progressive Web Apps
+## Angular
+
+## Performance Guidelines
+
+## Progressive Web Apps
