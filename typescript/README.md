@@ -19,3 +19,4 @@ You can go through the whole course, but these parts are mandatory:
  - [TypeScript playground](https://www.typescriptlang.org/play)
  - [Up and running with TypeScript @egghead.io](https://egghead.io/courses/up-and-running-with-typescript)
  - [Clean Code concepts adapted for TypeScript](https://github.com/labs42io/clean-code-typescript)
+ - [TypeScript in 30 minutes @tutorialzine.com](https://tutorialzine.com/2016/07/learn-typescript-in-30-minutes)
