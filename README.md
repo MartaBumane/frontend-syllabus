@@ -27,3 +27,5 @@
 ## Progressive Web Apps
 
 ## [General IT](./general)
+
+## [Learning Resources](./learning-resources)
