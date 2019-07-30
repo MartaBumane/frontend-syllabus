@@ -7,6 +7,7 @@
  - [.map() and .fill() @youtube.com/The Coding Train](https://www.youtube.com/watch?v=EnYlhbpzhU4)
  - [.map() explained ir 4 levels of difficulty @yazeedb.com](https://yazeedb.com/posts/array-map-explained-in-4-levels-of-difficulty) 
  - [Tutorial @reactivex.io](http://reactivex.io/learnrx/) - interactive tutorial which can help understand arrays better
+ - [Understanding JS function invocation & this @yehudakatz.com](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this)
 
 ## Classes & Objects
 
