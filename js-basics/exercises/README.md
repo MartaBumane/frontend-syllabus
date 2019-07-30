@@ -82,6 +82,11 @@ The Odometer Class: This class will simulate the car’s odometer. Its responsib
  
 Demonstrate the classes by creating instances of each. Simulate filling the car up with fuel, and then run a loop that increments the odometer until the car runs out of fuel. During each loop iteration, print the car’s current mileage and amount of fuel.
 
+#### Steps
+
+ 1. Design, implement and check your code by yourself;
+ 2. When you think that everything should work, go to the [car.test.js](./car.test.js) and test your code against it.  
+
 ### Exercise #5
 
 The object of the class Account must represent a bank account that has a balance (meaning some amount of money).
