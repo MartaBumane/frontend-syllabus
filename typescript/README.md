@@ -3,8 +3,7 @@
 ## Prerequisites
 
 - [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
-- [Up and running with TypeScript @egghead.io](https://egghead.io/courses/up-and-running-with-typescript)
-or
+- [Up and running with TypeScript @egghead.io](https://egghead.io/courses/up-and-running-with-typescript) **OR**
 - [TypeScript Fundamentals @udemy.com](https://www.udemy.com/typescript-fundamentals)
     - You can go through the whole course, but these parts are mandatory:
         - TypeScript Fundamentals;
