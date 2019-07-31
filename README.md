@@ -26,6 +26,8 @@
 
 ## Progressive Web Apps
 
+## [Web Security](./web-security)
+
 ## [General IT](./general)
 
 ## [Learning Resources](./learning-resources)
