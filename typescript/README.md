@@ -11,6 +11,7 @@
         - Generics and Enums;
         - Modules in TypeScript;
 - [Compiling TypeScript in VSCode](https://code.visualstudio.com/docs/typescript/typescript-compiling)
+- [install ts-node](https://www.npmjs.com/package/ts-node)
 
 ## TypeScript Basics
 
