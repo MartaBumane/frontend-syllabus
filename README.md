@@ -10,7 +10,7 @@
 
 ## [TypeScript](./typescript)
 
-## React
+## [React](./react)
 
 ## Advanced CSS
 
