@@ -165,3 +165,7 @@ To exit program press #
 To select a city from which you would like to start press 1
 ...
 ```
+
+#### Bonus
+
+Modify your application in a way that there is a possibility to add flights as an admin user also.
