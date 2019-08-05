@@ -7,6 +7,7 @@
   "author": "CODELEX",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^6.5.0",
     "prettier": "1.18.2"
   }
 }
