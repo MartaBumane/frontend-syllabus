@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "prettier": "prettier --write ./**/*.js",
+    "prettier:check": "prettier --check '**/*.{ts,js}'",
     "test": "jest",
-    "test:car": "jest js-basics/exercises",
+    "test:classes-and-objects": "jest js-basics/exercises/car"
   },
   "author": "CODELEX",
   "license": "ISC",
