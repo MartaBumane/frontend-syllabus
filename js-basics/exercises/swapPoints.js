@@ -4,14 +4,10 @@ class Point {
         this.y = y;
     }
 
-    static swapPoints(p1, p2){
-        console.log(p1);
-        console.log(p2);
+    static swapPoints(p1, p2){;
         let temp = p1;
         p1 = p2;
-        p2 = temp;
-        console.log("");
-        
+        p2 = temp;     
 
     }
 

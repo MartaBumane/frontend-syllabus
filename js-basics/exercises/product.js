@@ -27,7 +27,6 @@ lemon.printProduct();
 orange.printProduct();
 console.log();
 
-
 banana.changeAmount(20);
 banana.changePrice(1.0);
 banana.printProduct();

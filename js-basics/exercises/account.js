@@ -16,8 +16,6 @@ class Account{
         console.log(this.name + " balance is now: " + this.balance);
 
     }
-
-
 }
 
 const matts_account= new Account("Matt's account", 1000.00);
@@ -31,9 +29,3 @@ matts_account.withdraw(100);
 my_accountt.deposit(100);
 matts_account.printAmount();
 my_accountt.printAmount();
-
-
-
-// console.log("Final state");
-// console.log(bartosAccount);
-// console.log(bartosSwissAccount);

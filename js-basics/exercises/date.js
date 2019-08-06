@@ -38,7 +38,6 @@ class Date{
     displayDate(){
         return month + '/' + day + '/' +  this.year;
     }
-
 }
 
 const d1 = new Date(1,5,2019);
