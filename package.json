@@ -2,7 +2,9 @@
   "name": "frontend-syllabus",
   "version": "1.0.0",
   "scripts": {
-    "prettier": "prettier --write ./**/*.js"
+    "prettier": "prettier --write ./**/*.js",
+    "test": "jest",
+    "test:car": "jest js-basics/exercises",
   },
   "author": "CODELEX",
   "license": "ISC",

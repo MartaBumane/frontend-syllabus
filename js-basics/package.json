@@ -1,8 +1,0 @@
-{
-  "name": "js-basics",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "CODELEX"
-}
