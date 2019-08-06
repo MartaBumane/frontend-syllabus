@@ -1,17 +1,16 @@
 {
   "name": "frontend-syllabus",
   "version": "1.0.0",
-  "scripts": {
-    "prettier": "prettier --write ./**/*.js",
-    "prettier:check": "prettier --check '**/*.{ts,js}'",
-    "test": "jest",
-    "test:classes-and-objects": "jest js-basics/exercises/car"
-  },
-  "author": "CODELEX",
+  "author": "codelex",
   "license": "ISC",
+  "scripts": {
+    "test": "jest",
+    "test:classes-and-objects": "jest js-basics/exercises/car",
+    "prettier": "prettier --write '**/*.{ts,js}'",
+    "prettier:check": "prettier --check '**/*.{ts,js}'"
+  },
   "dependencies": {
     "@types/node": "^12.6.9",
-    "inquirer": "^6.5.0",
     "jest": "^24.8.0"
   },
   "devDependencies": {
