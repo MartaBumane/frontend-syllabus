@@ -1,10 +1,14 @@
 class Video{
     constructor(name, rating){
         this.name = name;
-        this._rating = rating;
+        this.rating = rating;
         this.user = null;
+        this.ratingCount = 1;
     }
-
+     addRating(rating){
+        this.ratingCount ++;
+        this.rating = (this.rating + rating)/this.ratingCount;
+     }
     get print(){
         if (this.isRented){
             return '['+this.name + ']';
@@ -22,7 +26,6 @@ class Video{
         this.user = null;
     }
 }
-
 
 class VideoStore{
     constructor(){
@@ -65,3 +68,4 @@ class VideoStore{
 }
 
 exports.VideoStore = VideoStore;
+
