@@ -1,0 +1,17 @@
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    docker build -t frontend-syllabus:latest .
+    docker run frontend-syllabus:latest run prettier:check
+    docker run frontend-syllabus:latest run test:classes-and-objects
+    displayName: 'Build'
