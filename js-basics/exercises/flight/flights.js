@@ -14,6 +14,18 @@ class FlightList{
         }         
     }
 
+    addNewInFile(start, finish){
+        let newTextInFile = start + ' -> '+finish;
+
+
+        const fs = require('fs');
+
+        fs.appendFile('flights.txt', newTextInFile, function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+        });
+    }
+
     get allRoutes(){
         return this.flightArray;
     }

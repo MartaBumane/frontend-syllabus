@@ -5,6 +5,41 @@ const list = new FlightList();
 let startAirport = '';
 let destinationAirport = '';
 
+async function addNewFlight(){
+  const { answer } = await inquirer.prompt([
+    {
+      type: "list",
+      name: "answer",
+      message: "What you would like to do now?",
+      choices: [
+        "Add new flight",
+        { name: `Exit program`, value: false }
+      ]
+    }
+  ]);
+
+  if (answer === "Add new flight") {
+    const { start, finish } = await inquirer.prompt([
+      {
+        type: "input",
+        name: "start",
+        message: "Please insert new start airport: "
+        
+      },
+      {
+        type: "input",
+        name: "finish",
+        message: "Please insert new destination airport: "
+        
+      }
+    ]);
+
+  
+    list.addNewInFile(start,finish);
+  }
+}
+
+
 async function returnBackToPreviousState(){
   const { answer } = await inquirer.prompt([
     {
@@ -98,6 +133,7 @@ async function app() {
       choices: [
         "See all routes",
         "Book a flight",
+        "Admin",
         { name: `Exit program`, value: false }
       ]
     }
@@ -109,6 +145,8 @@ async function app() {
   }else if(answer === "Book a flight"){
     await chooseStartAirport();
 
+  }else if(answer === "Admin"){
+    await addNewFlight();
   }
 
 }
