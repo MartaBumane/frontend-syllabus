@@ -1,24 +1,23 @@
-class Account{
-    constructor(name, balance){
-        this.name = name;
-        this.balance = balance;
-    }
+class Account {
+  constructor(name, balance) {
+    this.name = name;
+    this.balance = balance;
+  }
 
-    deposit(deposit){
-        return this.balance = this.balance + deposit;
-    }
+  deposit(deposit) {
+    return (this.balance = this.balance + deposit);
+  }
 
-    withdraw(withdraw){
-        return this.balance = this.balance - withdraw;
-    }
+  withdraw(withdraw) {
+    return (this.balance = this.balance - withdraw);
+  }
 
-    printAmount(){
-        console.log(this.name + " balance is now: " + this.balance);
-
-    }
+  printAmount() {
+    console.log(this.name + " balance is now: " + this.balance);
+  }
 }
 
-const matts_account= new Account("Matt's account", 1000.00);
+const matts_account = new Account("Matt's account", 1000.0);
 const my_accountt = new Account("My account", 0);
 
 console.log("Initial state");

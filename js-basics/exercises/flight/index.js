@@ -1,20 +1,17 @@
 const inquirer = require("inquirer");
-const {FlightList} = require('./flights');
+const { FlightList } = require("./flights");
 
 const list = new FlightList();
-let startAirport = '';
-let destinationAirport = '';
+let startAirport = "";
+let destinationAirport = "";
 
-async function addNewFlight(){
+async function addNewFlight() {
   const { answer } = await inquirer.prompt([
     {
       type: "list",
       name: "answer",
       message: "What you would like to do now?",
-      choices: [
-        "Add new flight",
-        { name: `Exit program`, value: false }
-      ]
+      choices: ["Add new flight", { name: `Exit program`, value: false }]
     }
   ]);
 
@@ -24,23 +21,19 @@ async function addNewFlight(){
         type: "input",
         name: "start",
         message: "Please insert new start airport: "
-        
       },
       {
         type: "input",
         name: "finish",
         message: "Please insert new destination airport: "
-        
       }
     ]);
 
-  
-    list.addNewInFile(start,finish);
+    list.addNewInFile(start, finish);
   }
 }
 
-
-async function returnBackToPreviousState(){
+async function returnBackToPreviousState() {
   const { answer } = await inquirer.prompt([
     {
       type: "list",
@@ -57,17 +50,17 @@ async function returnBackToPreviousState(){
   if (answer === "Go back") {
     console.log();
     app();
-  }else if(answer === "Book a flight"){
+  } else if (answer === "Book a flight") {
     chooseStartAirport();
   }
 }
 
-function displayAllPossibleRoutes(){
- console.log(list.allRoutes.join('\n').trim()+'\n');
-  returnBackToPreviousState();  
-} 
+function displayAllPossibleRoutes() {
+  console.log(list.allRoutes.join("\n").trim() + "\n");
+  returnBackToPreviousState();
+}
 
-async function choseDestinationAirport(airport){
+async function choseDestinationAirport(airport) {
   const { choices } = await inquirer.prompt([
     {
       name: "choices",
@@ -77,52 +70,54 @@ async function choseDestinationAirport(airport){
     }
   ]);
 
-  if (choices === 'Exit programm\n') {
+  if (choices === "Exit programm\n") {
     return;
-  } else if(choices === "'Go back to previous state'"){
-    chooseStartAirport(); 
-    }else {
-      destinationAirport = choices;
-      list.printFlightInfo(startAirport, destinationAirport);
-    }
+  } else if (choices === "'Go back to previous state'") {
+    chooseStartAirport();
+  } else {
+    destinationAirport = choices;
+    list.printFlightInfo(startAirport, destinationAirport);
+  }
 }
 
-function choicetoChooseAirportOrGoBack(listOfStartAirports){
+function choicetoChooseAirportOrGoBack(listOfStartAirports) {
   let arrayToreturn = [];
-  for(let i = 0;i<listOfStartAirports.length;i++){
+  for (let i = 0; i < listOfStartAirports.length; i++) {
     arrayToreturn.push(listOfStartAirports[i]);
   }
-  arrayToreturn.push('Go back to previous state');
-  arrayToreturn.push('Exit programm\n');
+  arrayToreturn.push("Go back to previous state");
+  arrayToreturn.push("Exit programm\n");
 
   return arrayToreturn;
-
 }
 
-async function chooseStartAirport(){
-  
+async function chooseStartAirport() {
   console.log();
   const { choices } = await inquirer.prompt([
-        {
-          name: "choices",
-          type: "list",
-          message: "Choose your Start Airport:",
-          choices: choicetoChooseAirportOrGoBack(list.listOfStartAirports)
-        }
-      ]);
+    {
+      name: "choices",
+      type: "list",
+      message: "Choose your Start Airport:",
+      choices: choicetoChooseAirportOrGoBack(list.listOfStartAirports)
+    }
+  ]);
 
-      if (choices === "San Jose"||"New York"||"Anchorage"||"Honolulu"||"Denver"||"San Francisco") {
-        startAirport = choices;
-        choseDestinationAirport(choices);
-          
-      } else if(choices === "'Go back to previous state'"){
-        returnBackToPreviousState(); 
-        }else if(choices === 'Exit programm\n'){
-          return;
-        }
+  if (
+    choices === "San Jose" ||
+    "New York" ||
+    "Anchorage" ||
+    "Honolulu" ||
+    "Denver" ||
+    "San Francisco"
+  ) {
+    startAirport = choices;
+    choseDestinationAirport(choices);
+  } else if (choices === "'Go back to previous state'") {
+    returnBackToPreviousState();
+  } else if (choices === "Exit programm\n") {
+    return;
+  }
 }
-
-
 
 async function app() {
   const { answer } = await inquirer.prompt([
@@ -142,13 +137,11 @@ async function app() {
   if (answer === "See all routes") {
     console.log("\n Here you can see all our routes: \n");
     await displayAllPossibleRoutes();
-  }else if(answer === "Book a flight"){
+  } else if (answer === "Book a flight") {
     await chooseStartAirport();
-
-  }else if(answer === "Admin"){
+  } else if (answer === "Admin") {
     await addNewFlight();
   }
-
 }
 
 app();
